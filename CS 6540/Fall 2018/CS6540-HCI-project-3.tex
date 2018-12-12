@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks = true, urlcolor = blue]{hyperref}
+\setlength{\parindent}{0pt}
+
+\title{CS 6540 --- Human-Computer Interaction\\\textbf{Project 3: Heuristic Evaluation}}
+\author{ }
+\date{\textbf{Due:} TBD}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+
+This is an individual project.\\
+
+The purpose of this assignment is to get hands-on experience with a heuristic evaluation. While in practice you would have multiple people perform a heuristic evaluation and then synthesize the results, for the purposes of this assignment you will be performing a heuristic evaluation alone.\\
+
+\textbf{Learning Objectives:}
+\begin{enumerate}
+    \item Gain a basic understanding of heuristic evaluation.
+    \item Gain experience in critiquing user interfaces using heuristic evaluation.
+    \item Be able to identify good and bad design decisions based on Nielsen's heuristics.
+    \item Reflect on heuristic evaluation as a method.
+\end{enumerate}\\
+
+
+\section{Background and Resources}
+As discussed in class, a heuristic evaluation is a method for individuals to use a set of design principles (heuristics) in order to identify problems (or successes) in a user interface or interaction. Heuristic evaluations may be performed by (UX or domain) experts or novices, although in general they are either performed by members of the team or by experts (who are observed by team members). Multiple (e.g., 5) people perform an evaluation of the interface; the results are then synthesized into a single report. There are opinions and research publications on how many evaluators are optimal (e.g., Nielsen's article, see Useful Resources below), the nature of issues found by heuristic evaluations, etc.\\
+
+In this assignment you will be utilizing \href{https://www.nngroup.com/articles/ten-usability-heuristics/}{Jakob Nielsen’s heuristics}. Namely:
+\begin{enumerate}
+    \item Visibility of system status
+    \item Match between system and the real world
+    \item User control and freedom
+    \item Consistency and standards
+    \item Error prevention
+    \item Recognition rather than recall
+    \item Flexibility and efficiency of use
+    \item Aesthetic and minimalist design
+    \item Help users recognize, diagnose, and recover from errors
+    \item Help and documentation
+\end{enumerate}
+Other commonly used heuristics do exist (e.g., Ben Shneiderman’s \href{https://www.cs.umd.edu/users/ben/goldenrules.html}{Eight Golden Rules of Interface Design}).\\
+
+\textbf{Useful Resources:}
+\begin{itemize}
+    \item As mentioned in the slides, \textit{Universal Methods of Design} (\href{https://utah-primoprod.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=UUU_ALMA21274580350002001&context=L&vid=UTAH}{available online via the University of Utah library}) has an entry on Heuristic Evaluation, which includes further useful references.
+    
+    \item Jakob Nielsen. \href{https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/}{How to Conduct a Heuristic Evaluation}. 1995. 
+
+    \item You can fairly easily find comparisons of different usability methods by looking around. For example, here is an academic publication comparing expert heuristic evaluation and end-user testing via a think-aloud task: 
+    \begin{itemize}
+        \item Ann Doubleday, Michele Ryan, Mark Springett, and Alistair Sutcliffe. \href{https://dl.acm.org/citation.cfm?id=263583}{A comparison of usability techniques for evaluating design}. In \textit{Proceedings of the 2nd conference on Designing interactive systems: processes, practices, methods, and techniques} (DIS), 1997.
+    \end{itemize}
+\end{itemize}
+
+\section{Your Assignment Tasks}
+\begin{enumerate}
+    \item One recommended approach is to first walk through the interface tasks (below) before starting the heuristic evaluation, in order to familiarize yourself with the task.
+    \item Go through the interface task, pausing frequently to look for and document items according to Nielsen's heuristics (see writeup requirements for details).
+    \item Complete and turn in the writeup.
+\end{enumerate}
+
+\section{The Interface Tasks}
+For this assignment you are evaluating GradeScope interfaces/interactions. The site is used to facilitate the bulk upload of scanned exams, grading by instructor-TA teams, regrades, and similar activities.
+
+\begin{enumerate}
+    \item Create an instructor account on GradeScope. \textbf{Note:} to create an account on GradeScope you need to use your .edu email. 
+    
+    \item Once the account is created, you will be presented with two demo courses. In this assignment you will be grading the \textbf{Demo Midterm} in the \textbf{Gradescope 101} course.
+    
+    \item Go through the process of grading the Demo Midterm. You should grade at least 3 students in order to get a feel for the process. 
+        \begin{itemize}
+            \item You will find that you need to edit the rubric (e.g., add rubric items or change rubric settings). 
+            \item In the demo course 10 students have already had exams scanned, uploaded, and attributed to them (via \texttt{1.pdf}). You may choose to grade those students or you may choose to process \texttt{2.pdf} to match the remaining enrolled students to their exams.
+            \item If you are not finding enough interface issues, feel free to experiment with other tasks on GradeScope: creating your own course or assignment, editing grading outlines, etc.
+        \end{itemize}
+
+\end{enumerate}
+
+\section{To Turn In}
+You will be turning in:
+\begin{enumerate}
+    \item The writeup of this assignment, as a PDF, to Canvas. As indicated below, all the writeup questions total 68 points.
+    
+\end{enumerate}
+
+\section{The Writeup}
+As mentioned above, the writeup addresses two different topics: the UX from the task (46 points) and heuristic evaluation as a method (22 points). In general we aren't as much looking for the ``right'' answer as for thoughtful reflection. There may be some redundancy in your answers, but in general attempt to use the question answers to convey any interesting insights that you encountered during the assignment.
+
+\subsection{Task UX}
+\begin{enumerate}
+    \item \textbf{[30 points]} Identify and document \textbf{6 (different)} \textit{problems} in the interface or interactions according to the heuristics.
+    \textbf{Specifically, for each item:}
+    \begin{enumerate}
+        \item Describe the interface or interaction item. Supplement with screenshots or annotated screenshots.
+        \item Identify which of Nielsen's heuristics is being violated.
+        \item Describe why the heuristic is being violated.
+        \item Rate the severity of the problem. While there are different scales that we could use (e.g., \href{https://measuringu.com/rating-severity/}{see here}), we will use the following scale:
+        \begin{itemize}
+            \item 0 = I don’t agree that this is a usability problem at all
+            \item 1 = Cosmetic problem only: need not be fixed unless extra time is available on project
+            \item 2 = Minor usability problem: fixing this should be given low priority
+            \item 3 = Major usability problem: important to fix, so should be given high priority
+            \item 4 = Usability catastrophe: imperative to fix this before product can be released
+        \end{itemize}
+    \end{enumerate}
+    Only issues that are severity 2+ will be accepted. As much as possible, try to report on problems that are higher severity and that violate different heuristics.
+    
+    \item \textbf{[8 points]} Identify and document \textbf{2 (different)} ways in which the interface or interaction are \textit{well done} according to the heuristics. \textbf{Specifically, for each item:}
+    \begin{enumerate}
+        \item Describe the interface or interaction item. Supplement with screenshots or annotated screenshots.
+        \item Identify which of Nielsen's heuristics is being followed.
+        \item Describe why the heuristic applies.
+    \end{enumerate}
+
+    \item \textbf{[8 points]} Describe \textbf{2 (different)} concrete suggestions for improvement for the interface/interaction. If applicable, supplement with sketches or mockups (e.g., insert photos of drawings, or take a screenshot of something you put together in an image editor). We will not grade you on the ``slickness'' of the supporting image, but instead on the suggestion for improvement (and how well the supporting image conveys the idea behind that suggestion). Ideally (but not necessarily) these suggestions should address issues raised by your heuristic evaluation.
+    
+    \item \textbf{[0 points]} Did you run across anything that you saw as a problem with the UX that could not be categorized under any of the heuristics? If so, what was the issue?
+    
+\end{enumerate}
+
+\subsection{Heuristic Evaluation Method Reflection}
+\begin{enumerate}
+    \item \textbf{[4 points]} Overall, \textbf{in terms of the method}, what worked well? What didn't work well?
+    \item \textbf{[3 points]} When might you decide to use a heuristic evaluation in the future, and why? When would you not use a heuristic evaluation, and why?
+    \item \textbf{[4 points]} What are the strengths of heuristic evaluation as a method? What are its weaknesses?
+    \item \textbf{[4 points]} Compare and contrast the heuristic evaluation and the think-aloud. How are they similar? How are they different? When might you use one or the other? When might you use both?
+    \item \textbf{[2 points]} If you were to do another heuristic evaluation on this interface, would you change the heuristics in any way (or use different heuristics)? Why or why not? If yes, what would you change?
+    \item \textbf{[0 points]} Did you look up further resources to help you perform your heuristic evaluation? If so, what were they? Were they helpful? Why or why not?
+    \item \textbf{[5 points]} Imagine that you are giving advice to someone else (a researcher, new UX professional) who is learning how to do a heuristic evaluation. In approximately 250 words, give them advice and suggest some best practices. Make as much of the advice as possible the things that ``aren’t obvious'' or ``are surprising.'' You can assume that they have read a basic description of the method, so paraphrasing the description is not helpful.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,188 @@
+\documentclass{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks = true, urlcolor = blue]{hyperref}
+\usepackage{csquotes}
+\usepackage{tikzsymbols}
+\setlength{\parindent}{0pt}
+
+\title{CS 6540 --- Human-Computer Interaction\\\textbf{Project 6: Questionnaires via Mechanical Turk}}
+\author{ }
+\date{\textbf{Due:} TBD}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+\textbf{Note:} As previously mentioned, this is a class that is partially focused on giving you \textit{hands-on experience} with \textit{skills that are useful} for conducting HCI research. As a result, this handout sometimes uses the term `research' as an adjective for, e.g., your focus topic for your group projects. We wish to emphasize that despite the occasional usage of that term, the purpose of these projects is entirely educational; we are not actually conducting research (i.e., a systematic investigation designed to develop or contribute to generalizable knowledge) and any findings from these group projects are not publishable. Review from a human subjects board is necessary in order to perform human subjects research (as opposed to classroom assignments, which are meant to increase your personal expertise and knowledge).\\
+
+This is the third of four group projects.\\
+
+You should use the same group from the previous project for this project. Additionally, you should use (roughly) the same research topic as in the previous project. \textbf{Note:} See further comments below discussing that the precise research \textit{questions} are likely going to be different in this project versus the previous project.\\
+
+The purpose of this assignment is to get hands-on experience with writing questionnaire questions and Mechanical Turk as a crowdsourcing/questionnaire platform.\\
+
+\textbf{Learning Objectives:}
+\begin{enumerate}
+    \item Be able to describe and reflect on the experience of being a (beginning) Mechanical Turk worker.
+    \item Be able to design neutral, useful questionnaire questions that help meet specific research goals.
+    \item Be able to administer a questionnaire via Mechanical Turk.
+    \item Be able to reflect on the process of designing and administering a questionnaire via Mechanical Turk.
+\end{enumerate}\\
+
+\section{Resources}
+We intentionally do not provide detailed procedural (or study design) instructions for this assignment. We fully expect that you will need to look up additional resources as necessary and/or figure out how to do things via trial and error.\\ 
+
+Part of the research process is being able to identify what you don't (and need to) know and locating such information. At this point there are numerous resources to refer to regarding designing questionnaires and/or using MTurk as a requester. There will be places in the project writeup where you can provide information about the resources that you pursued and located.\\
+
+The below are example resources that you might find helpful as you undertake this project:
+\begin{itemize}
+    \item \href{https://www.mturk.com/help}{Amazon MTurk FAQs}
+    \item \href{https://medium.com/@mechanicalturk/getting-started-with-surveys-and-market-research-3ca5c3b34f5b}{Amazon Mechanical Turk: Getting Started with Surveys and Market Research}
+    \item \href{https://blog.mturk.com/tutorial-getting-great-survey-results-from-mturk-and-qualtrics-f5366f0bd880}{Tutorial: Getting great survey results from MTurk and Qualtrics}
+    \item \href{https://www.qualtrics.com/free-account/}{Qualtrics: Create Your Free Account}
+        \begin{itemize}
+            \item \href{https://www.qualtrics.com/support/survey-platform/managing-your-account/trial-accounts/}{About Free (Trial) Accounts} (including restrictions)
+        \end{itemize}
+        \item Serge Egelman, Ed H. Chi, and Steven Dow. Crowdsourcing in HCI Research. \textit{Ways of Knowing in HCI}. Editors: Judith S. Olson and Wendy A. Kellogg. 2014. 
+\end{itemize}
+
+\section{Your Assignment Tasks}
+\begin{enumerate}
+    \item Spend some time (e.g., under an hour) as a worker on Mechanical Turk.
+    \item Consider the appropriate research questions to be answering in this project.  
+    \item Draft questionnaire questions.
+    \item Pilot a questionnaire as a Mechanical Turk HIT.
+    \item Run a questionnaire study on Mechanical Turk.
+    \item Complete and turn in the writeup. Also turn in all supporting materials, including the questionnaire.
+\end{enumerate}
+
+\section{Changing the Research Questions}
+If your research questions in the previous project were specific enough to be closely tied to your interview, then you very likely \textit{cannot} pursue the exact same research questions as in the interview project and expect valid and interesting results. As we have seen in lecture and readings, different methods have different strengths and weaknesses and are not equally good for any given research question.\\
+
+You should try to use this project in a way that you find most beneficial overall for your research topic. Your group may have obvious interesting things to ask. If you don't feel that your topic suits itself well to a questionnaire, then that probably means that your interview results will be the most interesting part of the final report. That's fine! Still try to use this project in a way that will be the best addition to your final project report, even if it is only to gather data that will be a minor supporting point for your interview.
+
+\section{Other Details and Requirements}
+
+\begin{itemize}
+    \item You probably want to create new Amazon account(s) for this project, potentially using a university address. Consider that you may want or need to share login credentials with group members or course staff; you probably don't want those people to also have access to your personal Amazon account.
+    
+    \item For privacy purposes, note via the preview functionality what the display name will be for any HIT that you post. You may wish to change the name associated with your account.
+    
+    \item Please do not use School of Computing information as your company when signing up.
+    
+    \item Amazon notes that it may take 3 business days after creating a worker account to get an invitation to actually complete HITs. Signing up as a worker is a separate process from signing up as a requester, \textit{even if you're using the same email address}.
+    
+    \item For the purposes of this assignment, we are giving each group a Visa gift card loaded with \$50. You can use this card to load \$50 of credit onto your Mechanical Turk requester account.
+    
+    \item How you allocate the budget for this project is up to your group. You are expected to run at least one pilot HIT (to try out your questionnaire HIT with a small number of workers) and then deploy and run your questionnaire as a HIT. You are expected to justify how you select the reward amount for your task. You are expected to choose any worker qualifications that you believe are appropriate for your project. Beyond that, you should try to get as many participants as possible with your budget.
+    
+    \item Note that Amazon charges \href{https://www.mturk.com/pricing}{various fees} for using the platform (general overhead, additional fees if a HIT has a large number of assignments, fees for Masters or premium qualifications). You need to consider these fees when considering how to use your credit.
+    
+    \item Note: If you submit any trial answers to your questions---whether via the Preview feature on the survey platform or not---\textbf{make sure} that you are not reporting on those responses in any of your writeups.
+
+    \item As with the previous project, we won't dictate the number of questions that should be asked. We also won't dictate the format that they should take. We will ask you why you made the choices you did.
+    
+    \item While you may end up needing to show images, etc., in order to ask your participants questions, your HIT should be at its heart a questionnaire rather than some other kind of task. If you have any questions about where your task falls, please contact us.
+    
+    \item You will not be expected to do any ``fancy'' data analysis on your results or to design a questionnaire that supports any particular statistical tests.
+    
+    \item In general, you can ask any questions that:
+    \begin{itemize}
+        \item Are ethical.
+        \item Have a point (What will you learn from them? Is it interesting? Would other researchers care?).
+        \begin{itemize}
+            \item More particularly, \textbf{are questionnaire questions the best (or a reasonable) way to get at the information that you want to know?} If the answer is, ``actually, the research questions would best be answered by conducting interviews and MTurk is a poor substitute,'' then you should \textit{come up with (related) research questions that are more suited to being answered by this method}.
+            \item Imagine that you're writing a paper (like those we've read) that details the research questions, the questionnaire, and (eventually) results. \textbf{Would you find the paper convincing?}
+        \end{itemize}
+        \item Have something to do with technology.
+        \item Have something to do with each other, your literature search, and your interview project.
+    \end{itemize}
+    Keep in mind that the results from your literature survey, the interview project, and this project will be combined into one coherent written report for the final group project.
+\end{itemize}
+
+\section{To Turn In}
+You will be turning in:
+\begin{enumerate}
+    \item The writeup of this assignment, as a PDF, to Canvas. Include all group member names on the writeup. Turn in only one writeup per group. 
+    
+\end{enumerate}
+
+\section{The Writeup}
+As we've done before, the writeup is a mix of what you did/what you found and a reflection on designing and administering a questionnaire via Mechanical Turk; however, this time we will be interspersing the two question types rather than putting them in separate sections.\\
+
+In general, we are not aiming to evaluate you on things on which we have not provided instruction; however, at this point in the course we are expecting that you have an increasing awareness of study design issues. We are therefore expecting you to be able to defend your study choices, be able to identify where you're not sure whether or not you made the right choice (and why), and sometimes seek out additional information in order to make an informed choice.
+
+\begin{enumerate}
+    \item \textbf{[10 points]} In approximately 250 words, give some insights that you gained from spending time as a Mechanical Turk worker. Were any of those insights helpful for designing your HIT?
+
+    \item \textbf{[10 points]} Identify \textbf{3 additional resources} that you looked up over the course of completing this assignment. For each resource, explain why you looked it up and how it did or did not affect the decisions you made.
+    
+    \item \textbf{[6 points]} Give the research questions that were you trying to address via this project.
+    
+    \item \textbf{[10 points]} Compare and contrast what you were trying to learn/answer in this project versus the interview project. How are you taking advantage of the strengths of the questionnaire method and the Mechanical Turk platform, specifically?
+    
+    \item \textbf{[20 points]} Did the task results help answer the research questions? Why or why not?
+    
+    \item \textbf{[40 points]} Give the final version of your task. This may involve taking screenshots and/or ``printing'' to PDF. Make sure that what you supply is sufficient for us to fully understand what you did. For example, if you have branching questionnaire logic, make sure that it is fully represented or described. If questions are randomized, make sure it is apparent.
+    
+    \item \textbf{[4 points]} With how many workers did you pilot your task? Why?
+
+    \item \textbf{[6 points]} What, if anything, changed in between your pilot(s) and your actual task deployment? Why?
+    
+    \item \textbf{[10 points]} How did you go about trying to write ``good'' questions? In addition to indicating any general properties you tried to achieve, give some examples of exact question wordings and what motivated them.
+    
+    \item \textbf{[10 points]} What questions format(s) did you choose, and why?
+
+    \item \textbf{[8 points]} In what ways did you attempt to confirm that workers produced high-quality answers to your HITs? 
+    
+    \item \textbf{[2 points]} What title did you give your HIT? Why?
+
+    \item \textbf{[2 points]} What description did you give your HIT? Why?
+
+    \item \textbf{[2 points]} What was your reward for a successfully completed HIT? Why?
+
+    \item \textbf{[2 points]} What keywords did you use for your HIT? Why?
+
+    \item \textbf{[2 points]} What other settings (e.g., number of assignments per HIT, time allotted per assignment, HIT expiration, HIT auto-approval, HIT visibility) did you use for your HIT? Why?
+
+    \item \textbf{[2 points]} Did you require that workers be Masters? Why?
+     
+    \item \textbf{[4 points]} Did you require any qualification criteria? Why?
+
+     \item \textbf{[3 points]} Did you manually approve any HITs, or let Amazon auto-approve? Why?
+
+     \item \textbf{[3 points]} Did you reject any HIT submissions? Why?
+
+     \item \textbf{[2 points]} Provide a precise breakdown of how the credit was spent. As a condition of this project, you are required to spend all (or almost all) of the credit that we gave you on the assignment.
+
+     \item \textbf{[6 points]} Provide what you feel is useful information regarding how workers completed your task. For example, you might give information about how long workers took to complete your task (average? median? min? max? a distribution?) or information about the workers' characteristics. Feel free to use tables or graphs. We are not aiming to judge you on your visualization choices---and they do not need to be ``advanced''---but they should be logical.
+     
+     \item \textbf{[6 points]} If you were to put the results from your task into tables and/or figures in a paper, what formats would you choose, and why?
+     
+     \item \textbf{[30 points]} Include copies of the tables and/or figures that you identified above, using your results.
+     
+     \item \textbf{[30 points]} Generally, what do you have to say about your results? For example, if you were to describe them in a paper, what would you say?
+
+     \item \textbf{[4 points]} If you were doing this project for research instead of as a course project, what, if anything, would you do differently?
+
+     \item \textbf{[4 points]} If you weren't constrained by the assignment requirements, would you want to use Mechanical Turk in a different way for your project? If so, what? 
+    
+\end{enumerate}
+
+\section*{Notes}
+\begin{itemize}
+    \item As previously mentioned, we are not dictating a specific question format (e.g., long answer, short answer, multiple choice, Likert, matrix, slider...). However, if your plan is to ask many open-ended questions, you should probably be concerned about your strategy.
+    
+    \item As with previous assignments, we are most interested in your learning. Therefore, there is no problem with indicating in your writeup that, for example, your results did not help answer your research questions in the way you intended. If that is the case, however, you are expected to describe why you think that happened, what you learned, and what you would do differently if you were to try again.
+    
+    \item The term \textit{pilot} in this handout just refers to the idea that I expect you to run a HIT on Mechanical Turk with an intentionally small number of workers in order to do a trial run of your questionnaire.
+    
+    \item If you do not end up being approved as a Mechanical Turk \textit{worker}, that's fine---you will still be able to browse some HITs and can use those to answer the writeup question.
+\end{itemize}
+
+\end{document}
